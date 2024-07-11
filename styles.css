@@ -13,27 +13,30 @@ body {
     height: 100vh;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f0f4f8;
+    margin: 10px; /* Added margin for better spacing on mobile */
 }
 
 #title {
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: 700;
+    color: #333;
+    text-align: center;
 }
 
 .card-body-container {
-    border: 2px solid #000;
+    border: 2px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     position: relative;
-    background-color: #FCFBE2;
+    background-color: #ffffff;
 }
 
 .top-row-container {
@@ -52,11 +55,13 @@ body {
     background: none;
     font-size: 24px;
     cursor: pointer;
+    color: #007bff;
 }
 
 .english {
     font-size: 24px;
     font-weight: 700;
+    color: #007bff;
 }
 
 .image {
@@ -66,27 +71,60 @@ body {
     max-height: 200px;
     display: block;
     margin: 20px auto;
+    border-radius: 10px;
 }
 
 .pinyin, .character {
     font-size: 5vw;
     margin: 5px 0;
     font-weight: 400;
+    color: #333;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+    body {
+        margin: 20px;
+    }
+
+    #title {
+        font-size: 28px;
+    }
+
+    .card-body-container {
+        padding: 15px;
+    }
+
+    .top-row-container {
+        padding: 0 5px;
+    }
+
+    .audio-button, .english {
+        font-size: 20px;
+    }
+
+    .image {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .pinyin, .character {
+        font-size: 6vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
     .pinyin, .character {
         font-size: 4vw;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 901px) and (max-width: 1200px) {
     .pinyin, .character {
         font-size: 3vw;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .pinyin, .character {
         font-size: 2vw;
     }
