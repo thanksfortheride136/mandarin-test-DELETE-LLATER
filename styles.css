@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+#title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.card-body-container {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #FCFBE2;
+}
+
+.top-row-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.audio-button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.english {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+.pinyin, .character {
+    font-size: 5vw;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+@media (min-width: 600px) {
+    .pinyin, .character {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .pinyin, .character {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pinyin, .character {
+        font-size: 2vw;
+    }
+}
